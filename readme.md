@@ -18,7 +18,7 @@ Open `/config/app.php` and, to your **providers** array, add:
 ```
 $providers = [
 ...
-     env('APP_ENV', 'production') == 'local') && \Summerblue\Generator\GeneratorsServiceProvider::class
+     (env('APP_ENV', 'production') == 'local') && \Summerblue\Generator\GeneratorsServiceProvider::class
 ...
 ];
 ```
