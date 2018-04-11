@@ -1,5 +1,5 @@
 {
-  "name": "summerblue/generator",
+  "name": "jimanx2/laravel5-generator",
   "description": "Extend Laravel 5.3's generators scaffold.",
   "keywords": ["laravel", "generators", "scaffold" , "laravel5"],
   "license": "MIT",
