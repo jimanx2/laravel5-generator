@@ -8,7 +8,7 @@ Laravel Scaffold Generator, for Laravel 5.3.
 
 ```
 composer config repositories.laravel5-generator vcs https://github.com/jimanx2/laravel5-generator
-composer require laravel5-generator:dev-master --dev
+composer require laravel5-generator:dev-master
 ```
 
 ### Step 2: Add the Service Provider
@@ -18,7 +18,7 @@ Open `/config/app.php` and, to your **providers** array, add:
 ```
 $providers = [
 ...
-     (env('APP_ENV', 'production') == 'local') && \Summerblue\Generator\GeneratorsServiceProvider::class
+     \Summerblue\Generator\GeneratorsServiceProvider::class,
 ...
 ];
 ```
