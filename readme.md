@@ -13,17 +13,14 @@ composer require jimanx2/laravel5-generator:dev-master --dev
 
 ### Step 2: Add the Service Provider
 
-Open `/app/Providers/AppServiceProvider.php` and, to your **register** function, add:
+Open `/config/app.php` and, to your **providers** array, add:
 
 ```
-public function register()
-{
-     if (app()->environment() == 'local' || app()->environment() == 'testing') {
-
-        $this->app->register(\Summerblue\Generator\GeneratorsServiceProvider::class);
-
-    }
-}
+$providers = [
+...
+     env('APP_ENV', 'production') == 'local') && \Summerblue\Generator\GeneratorsServiceProvider::class
+...
+];
 ```
 
 ### Step 3: Run Artisan!
