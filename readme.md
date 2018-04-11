@@ -8,7 +8,7 @@ Laravel Scaffold Generator, for Laravel 5.3.
 
 ```
 composer config repositories.laravel5-generator vcs https://github.com/jimanx2/laravel5-generator
-composer require laravel5-generator:dev-master
+composer require jimanx2/laravel5-generator:dev-master --dev
 ```
 
 ### Step 2: Add the Service Provider
